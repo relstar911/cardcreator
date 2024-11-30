@@ -10,7 +10,10 @@ export default [
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        module: 'readonly',
+      },
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
@@ -33,6 +36,15 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+    },
+  },
+  {
+    files: ['**/__tests__/**/*', '**/*.{spec,test}.{js,jsx}', '**/jest.config.js', '**/babel.config.js', '**/setupTests.js', '**/__mocks__/**/*'],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+        module: 'readonly',
+      },
     },
   },
 ]

@@ -1,9 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
 import CardCanvas from './components/CardCanvas';
 import Toolbar from './components/Toolbar';
-import PropertiesPanel from './components/PropertiesPanel';
 import './App.css';
 
 class ErrorBoundary extends React.Component {
@@ -29,6 +29,10 @@ class ErrorBoundary extends React.Component {
   }
 }
 
+ErrorBoundary.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 function App() {
   return (
     <ErrorBoundary>
@@ -41,7 +45,6 @@ function App() {
             <div className="card-canvas-container">
               <CardCanvas />
             </div>
-            <PropertiesPanel />
           </div>
         </div>
       </Provider>

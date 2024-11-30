@@ -211,7 +211,11 @@ const CardCanvas = () => {
   const cardProperties = useSelector((state) => state.card.cardProperties);
 
   return (
-    <div className="card-canvas">
+    <div 
+      className="card-canvas-container"
+      data-testid="card-canvas"
+      data-template={cardProperties.cardType}
+    >
       <Stage
         width={CARD_WIDTH * SCALE}
         height={CARD_HEIGHT * SCALE}
