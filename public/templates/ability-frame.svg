@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="750" height="1050" viewBox="0 0 750 1050" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <defs>
+    <linearGradient id="abilityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8e44ad;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <filter id="abilityGlow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="blur" operator="over" in2="SourceGraphic" />
+    </filter>
+  </defs>
+
+  <!-- Main Card Frame -->
+  <rect x="0" y="0" width="750" height="1050" rx="37.5" ry="37.5" 
+        fill="url(#abilityGradient)" filter="url(#abilityGlow)" />
+
+  <!-- Inner Frame -->
+  <rect x="30" y="30" width="690" height="990" rx="30" ry="30" 
+        fill="none" stroke="#9b59b6" stroke-width="2" />
+
+  <!-- Art Frame - Hexagonal -->
+  <path d="M75,120 L375,70 L675,120 L675,520 L375,570 L75,520 Z" 
+        fill="none" stroke="#9b59b6" stroke-width="3" />
+
+  <!-- Energy Cost Circle -->
+  <circle cx="105" cy="90" r="45" 
+          fill="none" stroke="#9b59b6" stroke-width="3" />
+
+  <!-- Effect Text Frame -->
+  <rect x="75" y="600" width="600" height="400" rx="15" ry="15" 
+        fill="none" stroke="#9b59b6" stroke-width="2" />
+
+  <!-- Decorative Elements -->
+  <path d="M30,30 L80,30 M30,30 L30,80" stroke="#9b59b6" stroke-width="4" />
+  <path d="M720,30 L670,30 M720,30 L720,80" stroke="#9b59b6" stroke-width="4" />
+  <path d="M30,1020 L80,1020 M30,1020 L30,970" stroke="#9b59b6" stroke-width="4" />
+  <path d="M720,1020 L670,1020 M720,1020 L720,970" stroke="#9b59b6" stroke-width="4" />
+
+  <!-- Energy Pattern -->
+  <path d="M375,70 L375,570" stroke="#9b59b6" stroke-width="1" stroke-dasharray="5,5" />
+  <path d="M75,320 L675,320" stroke="#9b59b6" stroke-width="1" stroke-dasharray="5,5" />
+</svg>

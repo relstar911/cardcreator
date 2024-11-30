@@ -1,0 +1,173 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Philosopher:wght@400;700&display=swap');
+
+.toolbar {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.toolbar-section {
+  background-color: var(--background-dark);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.toolbar-section h3 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: 'Cinzel', serif;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+.property-group {
+  margin-bottom: 15px;
+}
+
+.property-group label {
+  display: block;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.property-group input,
+.property-group select,
+.property-group textarea {
+  width: 100%;
+  background-color: var(--background-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 12px;
+  color: var(--text-primary);
+  font-size: 14px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.property-group input:focus,
+.property-group select:focus,
+.property-group textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--glow-color);
+  outline: none;
+}
+
+.card-type-select,
+.template-select,
+.essence-select {
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 12px;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.card-type-select option,
+.template-select option,
+.essence-select option {
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  padding: 12px;
+}
+
+button {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+/* Card Type Colors */
+.card-type-select option[value="character"] {
+  color: #4CAF50;
+}
+
+.card-type-select option[value="ability"] {
+  color: #2196F3;
+}
+
+.card-type-select option[value="dimensional"] {
+  color: #9C27B0;
+}
+
+/* Template Colors */
+.template-select option[value="standard"] {
+  color: #ffffff;
+}
+
+.template-select option[value="premium"] {
+  color: #4CAF50;
+}
+
+.template-select option[value="legendary"] {
+  color: #FFC107;
+}
+
+.template-select option[value="mythic"] {
+  color: #FF5722;
+}
+
+/* Essence Colors */
+.essence-select option[value="solar"] {
+  color: #FFD700;
+}
+
+.essence-select option[value="lunar"] {
+  color: #C0C0C0;
+}
+
+.essence-select option[value="stellar"] {
+  color: #87CEEB;
+}
+
+.essence-select option[value="cosmic"] {
+  color: #9370DB;
+}
+
+/* Scrollbar Styling */
+.toolbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.toolbar::-webkit-scrollbar-track {
+  background: var(--background-dark);
+}
+
+.toolbar::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.toolbar::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}

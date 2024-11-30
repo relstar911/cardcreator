@@ -1,0 +1,43 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Philosopher:wght@400;700&display=swap');
+
+/* Font Classes */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-philosopher {
+  font-family: 'Philosopher', sans-serif;
+}
+
+/* Card Text Styles */
+.card-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(74, 144, 226, 0.8);
+}
+
+.card-effect {
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 400;
+  color: #d4d4d4;
+}
+
+.card-stats {
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 700;
+  color: #e8c170;
+  text-shadow: 0 0 6px rgba(97, 75, 33, 0.6);
+}
+
+/* Card Type Specific Styles */
+.ability-text {
+  color: #9b59b6;
+  text-shadow: 0 0 8px rgba(155, 89, 182, 0.6);
+}
+
+.dimensional-text {
+  color: #d2b4de;
+  text-shadow: 0 0 10px rgba(210, 180, 222, 0.7);
+}
